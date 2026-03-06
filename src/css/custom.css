@@ -1,0 +1,36 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Herond Brand Colors */
+:root {
+  --ifm-color-primary: #3373F6;
+  --ifm-color-primary-dark: #1b5fe0;
+  --ifm-color-primary-darker: #1955d0;
+  --ifm-color-primary-darkest: #1446ab;
+  --ifm-color-primary-light: #5a8ff8;
+  --ifm-color-primary-lighter: #6d9cf9;
+  --ifm-color-primary-lightest: #9dbdfb;
+  --ifm-code-font-size: 95%;
+  --ifm-background-color: #F5F5F7;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #00b3ED;
+  --ifm-color-primary-dark: #00a1d5;
+  --ifm-color-primary-darker: #0098c9;
+  --ifm-color-primary-darkest: #007da5;
+  --ifm-color-primary-light: #1ac1f0;
+  --ifm-color-primary-lighter: #2ec7f1;
+  --ifm-color-primary-lightest: #5dd5f5;
+  --ifm-background-color: #0F1A35;
+  --ifm-background-surface-color: #17234B;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #0F1A35;
+}

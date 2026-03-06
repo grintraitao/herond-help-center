@@ -1,0 +1,9 @@
+{
+  "label": "Account & Services",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "/category/11-account-services",
+    "description": "Sign in, sync & manage your account settings."
+  }
+}
