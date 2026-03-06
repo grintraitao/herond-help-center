@@ -1,6 +1,15 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 
+const HELP_CENTER_CATEGORIES = [
+  {label: 'Desktop Browser', slug: '4-desktop-browser'},
+  {label: 'Herond Wallet', slug: '10-herond-wallet'},
+  {label: 'Account & Services', slug: '11-account-services'},
+  {label: 'Herond Ecosystem', slug: '8-herond-ecosystem'},
+  {label: 'Herond Shield', slug: '9-herond-shield'},
+  {label: 'Personalization', slug: '6-personalization'},
+];
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Herond Help Center',
@@ -11,13 +20,19 @@ const config = {
     v4: true,
   },
 
-  url: 'https://help.herond.org',
-  baseUrl: '/',
+  url: 'https://grintraitao.github.io',
+  baseUrl: '/herond-help-center/',
 
-  organizationName: 'nicenicenice-org',
+  organizationName: 'grintraitao',
   projectName: 'herond-help-center',
 
   onBrokenLinks: 'throw',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',
@@ -82,32 +97,10 @@ const config = {
         links: [
           {
             title: 'Help Center',
-            items: [
-              {
-                label: 'Desktop Browser',
-                to: '/category/4-desktop-browser',
-              },
-              {
-                label: 'Herond Wallet',
-                to: '/category/10-herond-wallet',
-              },
-              {
-                label: 'Account & Services',
-                to: '/category/11-account-services',
-              },
-              {
-                label: 'Herond Ecosystem',
-                to: '/category/8-herond-ecosystem',
-              },
-              {
-                label: 'Herond Shield',
-                to: '/category/9-herond-shield',
-              },
-              {
-                label: 'Personalization',
-                to: '/category/6-personalization',
-              },
-            ],
+            items: HELP_CENTER_CATEGORIES.map(({label, slug}) => ({
+              label,
+              to: `/category/${slug}`,
+            })),
           },
           {
             title: 'Community',

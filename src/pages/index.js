@@ -13,6 +13,7 @@ const CATEGORIES = [
     color: '#3373F6',
     desc: 'Installation, features & browsing guides',
     slug: '4-desktop-browser',
+    quickTag: 'Install',
   },
   {
     name: 'Herond Wallet',
@@ -21,6 +22,7 @@ const CATEGORIES = [
     color: '#6633FF',
     desc: 'Create, manage & secure your wallet',
     slug: '10-herond-wallet',
+    quickTag: 'Wallet',
   },
   {
     name: 'Account & Services',
@@ -29,6 +31,7 @@ const CATEGORIES = [
     color: '#00b3ED',
     desc: 'Sign in, sync & account settings',
     slug: '11-account-services',
+    quickTag: 'Sync',
   },
   {
     name: 'Herond Ecosystem',
@@ -45,6 +48,7 @@ const CATEGORIES = [
     color: '#E83669',
     desc: 'Privacy, ad-blocking & security',
     slug: '9-herond-shield',
+    quickTag: 'Privacy',
   },
   {
     name: 'Personalization',
@@ -53,8 +57,11 @@ const CATEGORIES = [
     color: '#EC4899',
     desc: 'Themes, extensions & customization',
     slug: '6-personalization',
+    quickTag: 'Extensions',
   },
 ];
+
+const QUICK_TAGS = CATEGORIES.filter((cat) => cat.quickTag);
 
 function HeroSection() {
   return (
@@ -81,19 +88,13 @@ function HeroSection() {
       </div>
 
       <div className={styles.quickTags}>
-        {[
-          {label: 'Install', to: '/category/4-desktop-browser'},
-          {label: 'Wallet', to: '/category/10-herond-wallet'},
-          {label: 'Privacy', to: '/category/9-herond-shield'},
-          {label: 'Extensions', to: '/category/6-personalization'},
-          {label: 'Sync', to: '/category/11-account-services'},
-        ].map((tag) => (
+        {QUICK_TAGS.map((cat) => (
           <Link
-            key={tag.label}
+            key={cat.slug}
             className={styles.quickTag}
-            to={tag.to}
+            to={`/category/${cat.slug}`}
           >
-            {tag.label}
+            {cat.quickTag}
           </Link>
         ))}
       </div>
