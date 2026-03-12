@@ -14,7 +14,7 @@ const HELP_CENTER_CATEGORIES = [
 const config = {
   title: 'Herond Help Center',
   tagline: 'Defend. Discover. Decentralize.',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/brand/favicon.svg',
 
   future: {
     v4: true,
@@ -73,7 +73,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/herond-social-card.jpg',
+      image: 'img/brand/docusaurus-social-card.jpg',
       colorMode: {
         respectPrefersColorScheme: true,
       },
@@ -81,7 +81,7 @@ const config = {
         title: 'Herond Help Center',
         logo: {
           alt: 'Herond Browser Logo',
-          src: 'img/logo.svg',
+          src: 'img/brand/logo.svg',
         },
         items: [
           {
@@ -97,7 +97,7 @@ const config = {
           },
           {
             href: 'https://herond.org',
-            label: 'herond.org',
+            label: 'Home',
             position: 'right',
           },
         ],
@@ -134,24 +134,41 @@ const config = {
             ],
           },
           {
-            title: 'Legal',
+            title: 'Resources',
             items: [
               {
-                label: 'Privacy Policy',
-                href: 'https://herond.org/privacy-policy',
-              },
-              {
-                label: 'Terms of Service',
-                href: 'https://herond.org/terms',
+                label: 'Download Herond',
+                href: 'https://herond.org/download',
               },
               {
                 label: 'herond.org',
                 href: 'https://herond.org',
               },
+              {
+                label: 'Contact Support',
+                href: 'mailto:support@herond.org',
+              },
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Terms of Use',
+                href: 'https://herond.org/terms-of-use',
+              },
+              {
+                label: 'Website Privacy Policy',
+                href: 'https://herond.org/website-privacy-policy',
+              },
+              {
+                label: 'Browser Privacy Policy',
+                href: 'https://herond.org/herond-browser-privacy-policy',
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Herond Browser. Built with Docusaurus.`,
+        copyright: `Copyright \u00A9 ${new Date().getFullYear()} Herond Browser.`,
       },
       prism: {
         theme: prismThemes.github,

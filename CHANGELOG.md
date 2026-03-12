@@ -101,6 +101,20 @@
 - **docusaurus.config.js** — Extract footer category links ra `HELP_CENTER_CATEGORIES` constant + generate bằng `.map()`. Thêm `markdown.hooks.onBrokenMarkdownLinks: 'warn'` (Docusaurus v4 syntax)
 - **helpscout-backup/fetch-helpscout.js** — Chuyển hardcoded API key sang `process.env.HELPSCOUT_API_KEY` với guard clause
 
+## 11. Homepage Redesign — Linear-style Dark Dashboard
+
+- Redesign theo phong cách Linear/GitHub: clean, compact, dark-first
+- **Hero Section**: compact title "How can we help?", solid dark bg (`#0F1A35`), bỏ gradient circles trang trí
+- **Quick Links**: pills dẫn đến top topics (Install, Wallet, Privacy, Sync, Extensions)
+- **2-tier Category Cards**:
+  - Tier 1 (Featured): 2 cards lớn cho Desktop Browser + Herond Wallet — có icon, description, article count
+  - Tier 2 (Utility): 4 cards nhỏ compact cho Account, Ecosystem, Shield, Personalization
+- **Popular Articles**: chuyển từ card grid sang minimalist link list, bỏ Popular badge
+- **CTA**: thu gọn từ banner lớn thành 1 dòng text "Need more help? Contact support"
+- **CSS**: bỏ heroCircle, categoryAccentBar, popularBadge, searchWrapper; subtle border hover thay vì translateY; dark-first với light mode fallback
+- **custom.css**: thêm `--ifm-background-surface-color: #fff` cho light mode
+- Build thành công, không lỗi
+
 ## Trạng thái hiện tại
 
 - Site build thành công, không lỗi, không warning
