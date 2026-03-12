@@ -20,8 +20,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://herondlabs.github.io',
-  baseUrl: '/herond-help-center/',
+  url: 'https://help.herond.org',
+  baseUrl: '/',
 
   organizationName: 'herondlabs',
   projectName: 'herond-help-center',
