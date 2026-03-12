@@ -13,13 +13,13 @@ slug: /article/61-how-to-deposit-on-mobile
 1. Tap **Deposit now** on the homepage.
 2. Select **Receive**.
 
-![Deposit Now](/img/how-to-deposit-on-mobile--file-Pu8oVtvBie.png)
+![Deposit Now](/img/herond-wallet/how-to-deposit-on-mobile--file-Pu8oVtvBie.png)
 
 ## If you already have assets:
 
 1. From the main wallet screen, tap **Receive**.
 
-![Receive](/img/how-to-deposit-on-mobile--file-JJIr9uORvg.png)
+![Receive](/img/herond-wallet/how-to-deposit-on-mobile--file-JJIr9uORvg.png)
 
 2. Choose How You Want to Receive
 

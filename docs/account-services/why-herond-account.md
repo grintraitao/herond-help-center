@@ -12,4 +12,4 @@ Herond Account is built on robust encryption and cutting-edge security measures,
 
 Experience the future of digital identity management with Herond Account. Join the movement towards a decentralized web where users have full control over their data and enjoy a seamless, secure, and interconnected online experience.
 
-![Why Herond Account](/img/why-herond-account--file-eHeKRnLcsW.png)
+![Why Herond Account](/img/account-services/why-herond-account--file-eHeKRnLcsW.png)

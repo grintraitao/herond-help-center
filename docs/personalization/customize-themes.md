@@ -17,11 +17,11 @@ Simply visit the Chrome Web Store and choose from a wide selection of themes.
 1. **Step 1** - Go to `Settings` > `Extensions` > `Get more extensions`
 2. **Step 2** - Click on **Open Web Store**
 
-![Customize themes - Web Store](/img/how-do-i-customize-themes--file-TliwZaADd9.png)
+![Customize themes - Web Store](/img/personalization/how-do-i-customize-themes--file-TliwZaADd9.png)
 
 3. **Step 3** - Choose the themes from the store and click **Add to Herond**
 
-![Customize themes - Add to Herond](/img/how-do-i-customize-themes--file-mplJ49zBUm.png)
+![Customize themes - Add to Herond](/img/personalization/how-do-i-customize-themes--file-mplJ49zBUm.png)
 
 With Herond Browser, you have the flexibility to personalize your browsing experience with more extensions. Add your favorite theme just like any other extension to customize the look and feel of your Herond Browser.
 

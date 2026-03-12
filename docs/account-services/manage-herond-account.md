@@ -10,7 +10,7 @@ slug: /article/30-how-do-i-manage-my-herond-account
 
 To navigate to the manage Herond Account page, just click on the Herond Account icon and click `Manage your Herond Account` from the drop-down menu.
 
-![Manage Herond Account](/img/how-do-i-manage-my-herond-account--file-8Rr6VSZZUY.png)
+![Manage Herond Account](/img/account-services/how-do-i-manage-my-herond-account--file-8Rr6VSZZUY.png)
 
 **Personal Info**
 
@@ -20,4 +20,4 @@ You will be navigated to a webpage to manage your account information and settin
 
 Select manage log-in sessions to view all logged-in sessions and decide whether to keep or cancel them.
 
-![Manage log-in sessions](/img/how-do-i-manage-my-herond-account--file-PkYsYsahrl.png)
+![Manage log-in sessions](/img/account-services/how-do-i-manage-my-herond-account--file-PkYsYsahrl.png)

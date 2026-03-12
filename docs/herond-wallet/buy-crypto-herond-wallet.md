@@ -25,4 +25,4 @@ Herond Wallet ensures a secure and transparent transaction process, allowing you
 
 :::
 
-![Buy Crypto](/img/how-do-i-buy-crypto-with-herond-wallet--file-hwswJMxGuu.png)
+![Buy Crypto](/img/herond-wallet/how-do-i-buy-crypto-with-herond-wallet--file-hwswJMxGuu.png)

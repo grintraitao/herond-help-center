@@ -27,4 +27,4 @@ To swap from token A to token B, perform the following steps:
 
 If you have any questions or problems during the swap, please contact us via the support bubble in the lower right corner or email [contact@herond.org](mailto:contact@herond.org) directly.
 
-![Swap Tokens](/img/how-do-i-swap-coins-in-herond-wallet--file-gAOs7ftr0n.png)
+![Swap Tokens](/img/herond-wallet/how-do-i-swap-coins-in-herond-wallet--file-gAOs7ftr0n.png)

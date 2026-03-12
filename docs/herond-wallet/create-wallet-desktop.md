@@ -16,7 +16,7 @@ popular_order: 2
 2. In the top-right corner, click the Wallet icon.
 3. This opens the Wallet Sidebar where you can manage your wallet and accounts.
 
-![Open Herond Wallet](/img/how-to-create-your-wallet-on-desktop--file-90tQLn1phv.png)
+![Open Herond Wallet](/img/herond-wallet/how-to-create-your-wallet-on-desktop--file-90tQLn1phv.png)
 
 ## Step 2: Create Your Herond Keyless Wallet
 
@@ -30,7 +30,7 @@ Select **Create Wallet** to continue.
 
 Herond will generate a secure key using MPC-TSS technology. No seed phrase needed.
 
-![Create Wallet](/img/how-to-create-your-wallet-on-desktop--file-PdHR02S8VJ.png)
+![Create Wallet](/img/herond-wallet/how-to-create-your-wallet-on-desktop--file-PdHR02S8VJ.png)
 
 ## Step 3: Set a Strong Password
 
@@ -57,11 +57,11 @@ Your password stays on your device only. Herond never stores it.
 
 :::
 
-![Set Password](/img/how-to-create-your-wallet-on-desktop--file-drfe5xQDTb.png)
+![Set Password](/img/herond-wallet/how-to-create-your-wallet-on-desktop--file-drfe5xQDTb.png)
 
 ## Step 4: Wait for the Setup to Complete
 
 1. Herond will prepare your wallet. You will see a short loading message: "Your wallet is setting up..."
 2. After a few seconds, you will reach the success screen. Tap **Get Started** to open your main wallet homepage.
 
-![Wallet Setup Complete](/img/how-to-create-your-wallet-on-desktop--file-45GxFXm3kh.png)
+![Wallet Setup Complete](/img/herond-wallet/how-to-create-your-wallet-on-desktop--file-45GxFXm3kh.png)

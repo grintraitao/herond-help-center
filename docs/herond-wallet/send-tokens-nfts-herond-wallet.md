@@ -26,4 +26,4 @@ Herond Wallet utilizes blockchain protocols to ensure the delivery of your asset
 
 :::
 
-![Send Tokens and NFTs](/img/how-do-i-send-coins-nfts-with-herond-wallet--file-mbgqfL6ICO.png)
+![Send Tokens and NFTs](/img/herond-wallet/how-do-i-send-coins-nfts-with-herond-wallet--file-mbgqfL6ICO.png)

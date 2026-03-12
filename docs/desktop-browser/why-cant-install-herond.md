@@ -16,4 +16,4 @@ Be mindful of low disk space notifications or any other issues that may hinder t
 
 By optimizing your disk space, you'll be ready to install Herond Browser without any interruptions and enjoy its exceptional browsing experience.
 
-![Why can't I install Herond Browser](/img/why-can-t-i-install-herond-browser--file-ylRZ47QklA.jpg)
+![Why can't I install Herond Browser](/img/desktop-browser/why-can-t-i-install-herond-browser--file-ylRZ47QklA.jpg)

@@ -12,4 +12,4 @@ Herond Wallet supports various cryptocurrencies and digital assets. You can send
 
 Read more about the articles on how to swap, send and buy cryptocurrencies in our help center.
 
-![Herond Wallet](/img/how-to-use-herond-wallet--file-9VYd0PDMB5.png)
+![Herond Wallet](/img/herond-wallet/how-to-use-herond-wallet--file-9VYd0PDMB5.png)

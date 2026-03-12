@@ -16,6 +16,6 @@ Setting Herond Browser as your default browser ensures that it is automatically 
 2. **Step 2** - Select `Settings`.
 3. **Step 3** - Scroll down until you see the `Default Browser` section and select `Make Default`.
 
-![Set Herond as default browser](/img/how-do-i-set-herond-browser-my-default-browser--file-4WDpX7axmn.png)
+![Set Herond as default browser](/img/desktop-browser/how-do-i-set-herond-browser-my-default-browser--file-4WDpX7axmn.png)
 
 By following the steps outlined in this guide, you can easily set Herond Browser as your default browser on different operating systems. Enjoy the enhanced browsing experience with Herond Browser as your default choice for web navigation.

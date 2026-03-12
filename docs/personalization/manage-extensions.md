@@ -18,4 +18,4 @@ Managing extensions in the Herond Browser allows you to customize and enhance yo
 
 From a comprehensive list of installed extensions, feel free to effortlessly remove extensions, turn them on and off, or view more details as desired.
 
-![Manage extensions](/img/how-do-i-manage-my-extensions--file-r2GufXjVM6.png)
+![Manage extensions](/img/personalization/how-do-i-manage-my-extensions--file-r2GufXjVM6.png)

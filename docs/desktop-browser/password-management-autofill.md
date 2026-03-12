@@ -12,4 +12,4 @@ With Herond, you can easily autofill information like passwords, payment methods
 
 To manage stored data, simply go to `Settings` > `Autofill` and then select the type of data you need.
 
-![Password Management & Autofill](/img/password-management-more--file-D0sjeODtwA.png)
+![Password Management & Autofill](/img/desktop-browser/password-management-more--file-D0sjeODtwA.png)

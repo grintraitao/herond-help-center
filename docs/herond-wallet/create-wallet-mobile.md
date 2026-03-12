@@ -13,7 +13,7 @@ slug: /article/59-how-to-create-your-wallet-on-mobile
 1. Open the Herond app on your phone.
 2. Tap the **Wallet** icon on the navigation bar to switch to wallet mode.
 
-![Open Herond Wallet](/img/how-to-create-your-wallet-on-mobile--file-u9orxrjhXB.png)
+![Open Herond Wallet](/img/herond-wallet/how-to-create-your-wallet-on-mobile--file-u9orxrjhXB.png)
 
 ## Step 2: Log In and Start Wallet Setup
 
@@ -27,7 +27,7 @@ When the wallet onboarding screen appears:
 
 Herond will start preparing your Keyless Wallet.
 
-![Log In](/img/how-to-create-your-wallet-on-mobile--file-JJrMkXnGlP.png)
+![Log In](/img/herond-wallet/how-to-create-your-wallet-on-mobile--file-JJrMkXnGlP.png)
 
 ## Step 3: Set Your Device Password
 
@@ -46,7 +46,7 @@ This password protects your wallet data on this device and is required to unlock
 
 Enter the password twice, then tap **Create**.
 
-![Set Password](/img/how-to-create-your-wallet-on-mobile--file-EFIxEUeWay.png)
+![Set Password](/img/herond-wallet/how-to-create-your-wallet-on-mobile--file-EFIxEUeWay.png)
 
 ## Step 4: Enable Biometrics (Face ID or Fingerprint)
 
@@ -68,7 +68,7 @@ Using biometrics is recommended for quicker and more secure access.
 
 :::
 
-![Enable Biometrics](/img/how-to-create-your-wallet-on-mobile--file-yUFAAVLLxw.png)
+![Enable Biometrics](/img/herond-wallet/how-to-create-your-wallet-on-mobile--file-yUFAAVLLxw.png)
 
 ## Step 5: Wallet Setup in Progress
 
@@ -76,4 +76,4 @@ Herond will finish creating your Keyless Wallet. A loading message will appear: 
 
 After a few seconds, your wallet will be ready. Tap **Get started** to open your wallet homepage.
 
-![Wallet Ready](/img/how-to-create-your-wallet-on-mobile--file-shOZbN4qzM.png)
+![Wallet Ready](/img/herond-wallet/how-to-create-your-wallet-on-mobile--file-shOZbN4qzM.png)

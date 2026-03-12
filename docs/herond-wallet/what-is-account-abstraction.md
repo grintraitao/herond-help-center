@@ -14,4 +14,4 @@ With account abstraction, users can seamlessly use smart contract wallets for tr
 
 Say goodbye to traditional EOAs and embrace the future of decentralized transactions with Herond Browser.
 
-![Account Abstraction](/img/what-is-account-abstraction--file-ymXvYWRDUB.png)
+![Account Abstraction](/img/herond-wallet/what-is-account-abstraction--file-ymXvYWRDUB.png)

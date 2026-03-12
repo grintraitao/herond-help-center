@@ -16,4 +16,4 @@ By logging in, you can effortlessly access your customized settings, browsing hi
 
 It's all about you and your unique browsing journey.
 
-![Herond Account](/img/what-is-a-herond-account--file-T9jyXNHAcQ.jpg)
+![Herond Account](/img/account-services/what-is-a-herond-account--file-T9jyXNHAcQ.jpg)

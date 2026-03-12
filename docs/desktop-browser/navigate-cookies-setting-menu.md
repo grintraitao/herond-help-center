@@ -15,7 +15,7 @@ Accessing the cookies setting menu allows you to manage and control how cookies 
 1. **Step 1** - Click on the `Menu` icon in the top right, and go to `Settings`.
 2. **Step 2** - Select `Additional settings` > `Privacy and Security` > `Cookies and other site data`.
 
-![Cookies setting menu](/img/how-to-navigate-to-the-cookies-setting-menu--file-dRMrHtZQwM.png)
+![Cookies setting menu](/img/desktop-browser/how-to-navigate-to-the-cookies-setting-menu--file-dRMrHtZQwM.png)
 
 3. **Step 3** - Configuration.
 

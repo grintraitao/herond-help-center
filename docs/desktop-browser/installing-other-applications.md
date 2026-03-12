@@ -18,4 +18,4 @@ We believe in providing a streamlined experience without unnecessary bundled app
 
 Enjoy the power of Herond Browser with all the essential features at your fingertips.
 
-![Herond Browser features](/img/will-i-be-installing-other-applications-along-with-herond-browser--file-4jkre3eU5C.jpg)
+![Herond Browser features](/img/desktop-browser/will-i-be-installing-other-applications-along-with-herond-browser--file-4jkre3eU5C.jpg)

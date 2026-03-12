@@ -12,4 +12,4 @@ What exactly does ASAS do? In essence, ASAS is a sophisticated security mechanis
 
 With ASAS, you can rest assured that your online safety is our top priority. The system promptly alerts you about potential security threats, malicious websites, phishing attempts, or suspicious downloads, allowing you to make informed decisions and take necessary precautions to protect your data and privacy.
 
-![ASAS Advanced Security Alert System](/img/what-does-asas-advanced-security-alert-system-do--file-LhzrbLYWF4.png)
+![ASAS Advanced Security Alert System](/img/herond-shield/what-does-asas-advanced-security-alert-system-do--file-LhzrbLYWF4.png)

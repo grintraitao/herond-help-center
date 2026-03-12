@@ -23,4 +23,4 @@ This guide will assist you in installing the Herond Browser. Follow the step-by-
 
 Once the setup is complete, Herond Browser will automatically run and open a new window. Within minutes, you'll have Herond Browser installed and ready to explore the web. Start your journey with Herond Browser today!
 
-![How to install Herond Browser](/img/how-to-install-herond-browser--file-0iMKXAirb9.jpg)
+![How to install Herond Browser](/img/desktop-browser/how-to-install-herond-browser--file-0iMKXAirb9.jpg)

@@ -10,4 +10,4 @@ slug: /article/36-what-products-are-built-in-to-herond-browser
 
 At the heart of the Herond browser lie two primary built-in features: Herond Shield, equipped with adblock and robust safety measures, and Herond Wallet, offering seamless web 3.0 connectivity, credential management as a service, also featuring multi-party computation wallet. For now, within our ecosystem, the interconnectedness among three key products -- Herond Browser, Herond Shield, and Herond Wallet -- will be of utmost significance.
 
-![Built-in Products](/img/what-products-are-built-in-to-herond-browser--file-YD3oqROrDy.png)
+![Built-in Products](/img/herond-ecosystem/what-products-are-built-in-to-herond-browser--file-YD3oqROrDy.png)

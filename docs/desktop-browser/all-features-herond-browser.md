@@ -16,7 +16,7 @@ Currently, you can enjoy:
 - **Herond Wallet**
 - **Herond Browser**
 
-![Herond Browser features](/img/what-are-all-the-features-that-herond-browser-offers--file-e8lBJ9tSZp.png)
+![Herond Browser features](/img/desktop-browser/what-are-all-the-features-that-herond-browser-offers--file-e8lBJ9tSZp.png)
 
 Stay tuned for the upcoming releases of **Herond Mail**, **Herond Chain**, **Herond X (Exchange)**, **Herond ID (Caas)**, and **Herond Go (Search Engine)**.
 
