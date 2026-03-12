@@ -11,6 +11,6 @@
 
 ## Custom domain
 - Khi sẵn sàng chuyển sang `help.herond.org`:
-  1. Thêm CNAME record trỏ về `grintraitao.github.io`
+  1. Thêm CNAME record trỏ về `herondlabs.github.io`
   2. Đổi `url` thành `https://help.herond.org` và `baseUrl` thành `/` trong `docusaurus.config.js`
   3. Set custom domain trong GitHub Pages settings

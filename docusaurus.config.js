@@ -20,10 +20,10 @@ const config = {
     v4: true,
   },
 
-  url: 'https://grintraitao.github.io',
+  url: 'https://herondlabs.github.io',
   baseUrl: '/herond-help-center/',
 
-  organizationName: 'grintraitao',
+  organizationName: 'herondlabs',
   projectName: 'herond-help-center',
 
   onBrokenLinks: 'throw',
