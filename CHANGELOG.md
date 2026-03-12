@@ -2,14 +2,14 @@
 
 ## 1. Planning & Setup
 
-- Plan migration from HelpScout to Docusaurus (static site)
+- Plan migration from legacy help center to Docusaurus (static site)
 - Set up Visual Studio Code as primary IDE
 - Install Claude Code (Anthropic CLI) integrated in VSCode for coding assistance
 - Initialize Docusaurus v3.9.2 project with docs-only mode (`routeBasePath: '/'`)
 
 ## 2. Content Migration
 
-- Back up data from HelpScout Docs API v1 (articles, categories, images)
+- Back up data from legacy help center API (articles, categories, images)
 - Convert articles to Markdown (`.md`) with frontmatter (title, slug, description, sidebar_label, sidebar_position)
 - Organize into 6 category folders:
   - `docs/desktop-browser/` (12 articles)
@@ -31,7 +31,7 @@
 
 ## 4. Category URLs
 
-- Map categories to numbered slugs matching original HelpScout pattern:
+- Map categories to numbered slugs:
   - Desktop Browser = 4, Herond Wallet = 10, Account & Services = 11, Herond Ecosystem = 8, Herond Shield = 9, Personalization = 6
 - Update 6 `_category_.json` files with slugs like `/category/{number}-{slug}`
 - Update `docusaurus.config.js` footer links and `src/pages/index.js` CATEGORIES array
@@ -115,4 +115,6 @@
 - Lucide React icons for category cards
 - Offline local search functional
 - Images organized by category for easy maintenance
+- Custom domain: `help.herond.org`
 - Deployed via GitHub Actions to GitHub Pages
+ 
