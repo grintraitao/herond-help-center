@@ -74,18 +74,8 @@ function HeroSection() {
         How can we help you?
       </Heading>
       <p className={styles.heroSubtitle}>
-        Search our knowledge base or browse categories below
+        Browse our knowledge base or use the search bar above
       </p>
-
-      <div className={styles.searchWrapper}>
-        <span className={styles.searchIcon}>&#128269;</span>
-        <input
-          type="text"
-          placeholder="Search articles... e.g. 'install browser', 'wallet setup'"
-          className={styles.searchInput}
-          readOnly
-        />
-      </div>
 
       <div className={styles.quickTags}>
         {QUICK_TAGS.map((cat) => (

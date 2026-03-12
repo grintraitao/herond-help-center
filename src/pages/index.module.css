@@ -1,7 +1,7 @@
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, #17234B 0%, #3373F6 50%, #00b3ED 100%);
-  padding: 72px 24px 80px;
+  padding: 56px 24px 48px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -53,41 +53,6 @@
   font-size: 17px;
   margin: 0 0 36px;
   position: relative;
-}
-
-/* Search */
-.searchWrapper {
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.searchIcon {
-  position: absolute;
-  left: 18px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
-  opacity: 0.5;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.searchInput {
-  width: 100%;
-  padding: 18px 24px 18px 50px;
-  font-size: 16px;
-  border: none;
-  border-radius: 16px;
-  outline: none;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
-  font-family: inherit;
-  transition: box-shadow 0.2s ease;
-}
-
-.searchInput:focus {
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
 }
 
 /* Quick Tags */
