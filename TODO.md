@@ -1,9 +1,5 @@
 # TODO - Herond Help Center
 
-## Search functionality
-- Cài search plugin cho Docusaurus (đã thử `@easyops-cn/docusaurus-search-local` nhưng lỗi, cần thử lại hoặc dùng plugin khác)
-- Kết nối search bar trên homepage vào search thật (hiện tại đang `readOnly`)
-
 ## Popular Articles dựa trên analytics
 - Hiện tại: admin chọn thủ công qua frontmatter (`popular: true`, `popular_order`)
 - Mục tiêu: dựa trên pageviews thật từ người dùng

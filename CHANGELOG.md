@@ -86,12 +86,12 @@
   - Expose data qua `setGlobalData`
 - Cập nhật `src/pages/index.js` — dùng `usePluginData('popular-articles')` thay vì mảng hardcode
 
-## 9. Search (tạm hoãn)
+## 9. Search
 
-- Đã thử cài `@easyops-cn/docusaurus-search-local`
-- Gặp lỗi `Cannot find module '@theme/SearchPage'` khi chạy dev server
-- Đã revert — gỡ search plugin khỏi config để site hoạt động ổn định
-- Search sẽ xử lý sau
+- Sử dụng `@easyops-cn/docusaurus-search-local` v0.55.1 (offline, local search)
+- Lần đầu bị lỗi `Cannot find module '@theme/SearchPage'` do thêm vào `plugins` thay vì `themes`
+- Fix: thêm vào `themes` array trong `docusaurus.config.js` với config `hashed: true`, `docsRouteBasePath: '/'`
+- Search bar tự động xuất hiện trên navbar, hoạt động offline không gửi data ra ngoài
 
 ## 10. Code Refactoring
 
@@ -108,4 +108,4 @@
 - Brand colors, logo, favicon, social links đã cập nhật
 - Category URLs match HelpScout pattern
 - Code đã được refactor, giảm duplication
-- Còn thiếu: Search functionality
+- Search functionality hoạt động (offline local search)
