@@ -1,41 +1,130 @@
-# Website
+# Herond Help Center
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Official help center and documentation for [Herond Browser](https://herond.org) — built with [Docusaurus v3](https://docusaurus.io/).
 
-## Installation
+**Live site:** [herondlabs.github.io/herond-help-center](https://herondlabs.github.io/herond-help-center/)
+
+## Features
+
+- 51 articles across 6 categories (Desktop Browser, Herond Wallet, Account & Services, Herond Shield, Herond Ecosystem, Personalization)
+- Offline local search (no external API calls)
+- Dark-first design with light mode support
+- Custom homepage with category cards and popular articles
+- Custom 404 page
+- Automated deployment via GitHub Actions
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- npm
+
+### Installation
 
 ```bash
-yarn
+npm install
 ```
 
-## Local Development
+### Local Development
 
 ```bash
-yarn start
+npm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Starts a dev server at `http://localhost:3000/herond-help-center/`. Changes are hot-reloaded.
 
-## Build
+### Build
 
 ```bash
-yarn build
+npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Generates static files in the `build/` directory.
+
+### Serve Production Build
+
+```bash
+npm run serve
+```
+
+## Project Structure
+
+```
+herond-help-center/
+├── docs/                    # Markdown articles
+│   ├── desktop-browser/     # 12 articles
+│   ├── herond-wallet/       # 10 articles
+│   ├── account-services/    # 8 articles
+│   ├── herond-shield/       # 11 articles
+│   ├── herond-ecosystem/    # 5 articles
+│   └── personalization/     # 5 articles
+├── src/
+│   ├── css/custom.css       # Global theme (brand colors, sidebar, footer)
+│   └── pages/
+│       ├── index.js         # Homepage
+│       ├── index.module.css # Homepage styles
+│       └── 404.js           # Custom 404 page
+├── static/img/              # Images organized by category
+│   ├── brand/               # Logo, favicon, social card
+│   ├── desktop-browser/
+│   ├── herond-wallet/
+│   ├── account-services/
+│   ├── herond-shield/
+│   ├── herond-ecosystem/
+│   └── personalization/
+├── plugins/
+│   └── popular-articles.js  # Dynamic popular articles from frontmatter
+├── docusaurus.config.js     # Site configuration
+└── sidebars.js              # Auto-generated sidebar
+```
+
+## Adding Content
+
+### New Article
+
+1. Create a `.md` file in the appropriate `docs/<category>/` folder
+2. Add frontmatter:
+
+```markdown
+---
+title: Article Title
+sidebar_label: Short Label
+sidebar_position: 1
+description: Brief description for SEO
+---
+
+Article content here...
+```
+
+### Mark as Popular
+
+Add `popular: true` and `popular_order: N` to the frontmatter. Articles appear on the homepage sorted by `popular_order`.
+
+### Adding Images
+
+Place images in `static/img/<category>/` and reference them in markdown:
+
+```markdown
+![Alt text](/img/<category>/filename.png)
+```
 
 ## Deployment
 
-Using SSH:
+Deployment is automated via GitHub Actions. Every push to `master` triggers a build and deploy to GitHub Pages.
 
-```bash
-USE_SSH=true yarn deploy
-```
+## Brand Colors
 
-Not using SSH:
+| Color | Hex | Usage |
+|---|---|---|
+| Blue Sky | `#3373F6` | Primary (light mode) |
+| Ozone | `#00b3ED` | Primary (dark mode) |
+| Violet | `#6b33fa` | Accent |
+| Pink | `#ff4070` | Accent |
+| Teal | `#00CCC0` | Accent |
+| Midnight | `#17234B` | Dark surface |
+| Cosmic Blue | `#0F1A35` | Dark background |
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+## License
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Copyright Herond Browser. All rights reserved.

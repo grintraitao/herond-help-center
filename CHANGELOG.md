@@ -1,125 +1,118 @@
-# Herond Help Center - Changelog
+# Herond Help Center — Changelog
 
 ## 1. Planning & Setup
 
-- Lên kế hoạch migrate Help Center từ HelpScout sang Docusaurus (static site)
-- Cài đặt Visual Studio Code làm IDE chính
-- Cài đặt Claude Code (Anthropic CLI) tích hợp trong VSCode để hỗ trợ coding
-- Khởi tạo project Docusaurus v3.9.2 với docs-only mode (`routeBasePath: '/'`)
+- Plan migration from HelpScout to Docusaurus (static site)
+- Set up Visual Studio Code as primary IDE
+- Install Claude Code (Anthropic CLI) integrated in VSCode for coding assistance
+- Initialize Docusaurus v3.9.2 project with docs-only mode (`routeBasePath: '/'`)
 
-## 2. Migrate nội dung từ HelpScout
+## 2. Content Migration
 
-- Backup dữ liệu từ HelpScout Docs API v1 (articles, categories, images)
-- Chuyển đổi articles sang Markdown (`.md`) với frontmatter (title, slug, description, sidebar_label, sidebar_position)
-- Tổ chức thư mục theo 6 categories:
+- Back up data from HelpScout Docs API v1 (articles, categories, images)
+- Convert articles to Markdown (`.md`) with frontmatter (title, slug, description, sidebar_label, sidebar_position)
+- Organize into 6 category folders:
   - `docs/desktop-browser/` (12 articles)
   - `docs/herond-wallet/` (10 articles)
   - `docs/account-services/` (8 articles)
   - `docs/herond-ecosystem/` (5 articles)
   - `docs/herond-shield/` (11 articles)
   - `docs/personalization/` (5 articles)
-- Download & copy images từ HelpScout vào `static/img/`
+- Download and copy images to `static/img/`
 
-## 3. Xây dựng Homepage custom
+## 3. Custom Homepage
 
-- Tạo `src/pages/index.js` với 4 sections:
-  - **HeroSection** — tiêu đề "How can we help you?" + search bar + quick tags
-  - **CategoriesSection** — 6 category cards với icon, mô tả, số articles
-  - **PopularArticlesSection** — danh sách bài viết phổ biến
-  - **CtaBanner** — liên hệ support qua email
-- Tạo `src/pages/index.module.css` — styling cho homepage (hero gradient, cards, grid layout, dark mode)
+- Create `src/pages/index.js` with 4 sections:
+  - **HeroSection** — title "How can we help you?" + tagline
+  - **CategoriesSection** — 6 category cards with Lucide icons, descriptions, article counts
+  - **PopularArticlesSection** — dynamic list of popular articles
+  - **CtaFooter** — contact support via email
+- Create `src/pages/index.module.css` — homepage styling (hero glow, cards, grid layout, dark/light mode)
 
-## 4. Cập nhật Category URLs theo HelpScout pattern
+## 4. Category URLs
 
-- Gọi HelpScout API để lấy category numbers:
-  - Desktop Browser = 4
-  - Herond Wallet = 10
-  - Account & Services = 11
-  - Herond Ecosystem = 8
-  - Herond Shield = 9
-  - Personalization = 6
-- Cập nhật 6 file `_category_.json` — thêm slug dạng `/category/{number}-{slug}`
-- Cập nhật `docusaurus.config.js` — footer links dùng numbered slugs
-- Cập nhật `src/pages/index.js` — CATEGORIES array và quick tags dùng numbered slugs
+- Map categories to numbered slugs matching original HelpScout pattern:
+  - Desktop Browser = 4, Herond Wallet = 10, Account & Services = 11, Herond Ecosystem = 8, Herond Shield = 9, Personalization = 6
+- Update 6 `_category_.json` files with slugs like `/category/{number}-{slug}`
+- Update `docusaurus.config.js` footer links and `src/pages/index.js` CATEGORIES array
 
-## 5. Cập nhật Social Links
+## 5. Social Links
 
-- Cập nhật footer Community trong `docusaurus.config.js`:
+- Update footer Community section in `docusaurus.config.js`:
   - Facebook: https://www.facebook.com/HerondBrowser
   - X (Twitter): https://x.com/HerondBrowser
   - Discord: https://discord.com/invite/Herond-Browser
   - Telegram: https://t.me/herond_browser
 
-## 6. Áp dụng Herond Brand Colors
+## 6. Brand Colors & Typography
 
 - Color palette:
-  - Primary: BLUE SKY `#3373F6`
-  - Accent: OZONE `#00b3ED`, TEAL `#00CCC0`, VIOLET `#6633FF`, RED `#E83669`
-  - Light bg: OFF WHITE `#F5F5F7`
-  - Dark bg: MIDNIGHT `#17234B`, COSMIC BLUE `#0F1A35`
-- Cập nhật `src/css/custom.css` — Infima CSS variables (light & dark mode)
-- Cập nhật `src/pages/index.module.css` — hero gradient, CTA button, hover colors, dark mode
-- Cập nhật `src/pages/index.js` — mỗi category card dùng brand color riêng
+  - Primary: Blue Sky `#3373F6` / Ozone `#00b3ED` (dark mode)
+  - Accents: Teal `#00CCC0`, Violet `#6b33fa`, Pink `#ff4070`
+  - Light bg: Off White `#F5F5F7` / Dark bg: Midnight `#17234B`, Cosmic Blue `#0F1A35`
+- Font: Plus Jakarta Sans (Google Fonts)
+- Update `src/css/custom.css` — Infima CSS variables (light & dark mode)
+- Update homepage styles — hero glow, card hover effects, dark-first design
 
-## 7. Cập nhật Logo & Favicon
+## 7. Logo & Favicon
 
-- Copy logo từ Brand Kit (`Glyphs/Herond Glyph.svg`) -> `static/img/logo.svg`
-- Copy favicon từ Brand Kit -> `static/img/favicon.svg` + `static/img/favicon.png`
-- Cập nhật `docusaurus.config.js` — favicon trỏ sang `img/favicon.svg`
+- Copy logo from Brand Kit (`Glyphs/Herond Glyph.svg`) → `static/img/brand/logo.svg`
+- Copy favicon from Brand Kit → `static/img/brand/favicon.svg` + `favicon.png`
+- Update `docusaurus.config.js` — point to `img/brand/` paths
 
-## 8. Dynamic Popular Articles (thay thế hardcode)
+## 8. Dynamic Popular Articles
 
-- Thêm frontmatter `popular: true` và `popular_order: N` vào 10 bài viết:
-  1. How to install Herond Browser? (order 1)
-  2. How to Create Your Wallet on Desktop (order 2)
-  3. WebRTC IP Handling Policy (order 3)
-  4. How do I set Herond Browser my default browser? (order 4)
-  5. What is a Herond Account? (order 5)
-  6. How do I check if a site's connection is secure? (order 6)
-  7. Sign in & sync in Herond (order 7)
-  8. How do I customize themes? (order 8)
-  9. Will I be installing other applications along with Herond Browser? (order 9)
-  10. How do I browse & add an extension? (order 10)
-- Tạo custom plugin `plugins/popular-articles.js`:
-  - Scan docs, đọc frontmatter bằng `gray-matter`
-  - Sort theo `popular_order`
-  - Expose data qua `setGlobalData`
-- Cập nhật `src/pages/index.js` — dùng `usePluginData('popular-articles')` thay vì mảng hardcode
+- Add frontmatter `popular: true` and `popular_order: N` to 10 selected articles
+- Create custom plugin `plugins/popular-articles.js`:
+  - Scans docs, reads frontmatter with `gray-matter`
+  - Sorts by `popular_order`
+  - Exposes data via `setGlobalData`
+- Update homepage to use `usePluginData('popular-articles')` instead of hardcoded array
 
 ## 9. Search
 
-- Sử dụng `@easyops-cn/docusaurus-search-local` v0.55.1 (offline, local search)
-- Lần đầu bị lỗi `Cannot find module '@theme/SearchPage'` do thêm vào `plugins` thay vì `themes`
-- Fix: thêm vào `themes` array trong `docusaurus.config.js` với config `hashed: true`, `docsRouteBasePath: '/'`
-- Search bar tự động xuất hiện trên navbar, hoạt động offline không gửi data ra ngoài
+- Add `@easyops-cn/docusaurus-search-local` v0.55.1 (offline local search)
+- Configure in `themes` array with `hashed: true`, `docsRouteBasePath: '/'`
+- Search bar appears in navbar, works fully offline
 
 ## 10. Code Refactoring
 
-- **sidebars.js** — Xóa boilerplate comments và example config thừa, chỉ giữ auto-generated sidebar config
-- **src/pages/index.js** — Thêm field `quickTag` vào `CATEGORIES`, derive `QUICK_TAGS` bằng `.filter()` thay vì hardcode mảng riêng với slug trùng lặp
-- **src/pages/index.module.css** — Gộp CSS chung của 3 class `.heroCircle1/2/3` vào base class `.heroCircle` sử dụng CSS Modules `composes`
-- **docusaurus.config.js** — Extract footer category links ra `HELP_CENTER_CATEGORIES` constant + generate bằng `.map()`. Thêm `markdown.hooks.onBrokenMarkdownLinks: 'warn'` (Docusaurus v4 syntax)
-- **helpscout-backup/fetch-helpscout.js** — Chuyển hardcoded API key sang `process.env.HELPSCOUT_API_KEY` với guard clause
+- **sidebars.js** — Remove boilerplate comments, keep only auto-generated sidebar config
+- **src/pages/index.js** — Derive `QUICK_TAGS` via `.filter()` instead of duplicate hardcoded array
+- **src/pages/index.module.css** — Consolidate shared hero circle styles using CSS Modules `composes`
+- **docusaurus.config.js** — Extract footer category links to `HELP_CENTER_CATEGORIES` constant
 
-## 11. Homepage Redesign — Linear-style Dark Dashboard
+## 11. Homepage Redesign
 
-- Redesign theo phong cách Linear/GitHub: clean, compact, dark-first
-- **Hero Section**: compact title "How can we help?", solid dark bg (`#0F1A35`), bỏ gradient circles trang trí
-- **Quick Links**: pills dẫn đến top topics (Install, Wallet, Privacy, Sync, Extensions)
-- **2-tier Category Cards**:
-  - Tier 1 (Featured): 2 cards lớn cho Desktop Browser + Herond Wallet — có icon, description, article count
-  - Tier 2 (Utility): 4 cards nhỏ compact cho Account, Ecosystem, Shield, Personalization
-- **Popular Articles**: chuyển từ card grid sang minimalist link list, bỏ Popular badge
-- **CTA**: thu gọn từ banner lớn thành 1 dòng text "Need more help? Contact support"
-- **CSS**: bỏ heroCircle, categoryAccentBar, popularBadge, searchWrapper; subtle border hover thay vì translateY; dark-first với light mode fallback
-- **custom.css**: thêm `--ifm-background-surface-color: #fff` cho light mode
-- Build thành công, không lỗi
+- Redesign inspired by Linear/GitHub: clean, compact, dark-first aesthetic
+- **Hero**: compact title with aurora glow effect (dual radial gradients), tagline "Defend · Discover · Decentralize"
+- **Category Cards**: 3×2 grid with Lucide React icons, accent colors, animated arrow on hover
+- **Popular Articles**: minimalist 2-column link list
+- **CTA**: polite single-line text + outlined button
+- **Sidebar**: clean separation between categories (uppercase headers with accent border) and articles (indented with guide line)
+- **Footer**: 4-column layout (Help Center, Community, Resources, Legal) with updated legal URLs
+- **Navbar**: "herond.org" → "Home", styled Download button, hide external link icons
+- **404 page**: custom page with aurora gradient "404" text and "This page has flown away" tagline
 
-## Trạng thái hiện tại
+## 12. Image Reorganization
 
-- Site build thành công, không lỗi, không warning
-- Homepage với dynamic popular articles hoạt động
-- Brand colors, logo, favicon, social links đã cập nhật
-- Category URLs match HelpScout pattern
-- Code đã được refactor, giảm duplication
-- Search functionality hoạt động (offline local search)
+- Move all 50 images from flat `static/img/` to category-based subfolders:
+  - `static/img/brand/` — favicon, logo, social card (9 files)
+  - `static/img/desktop-browser/` (8 images)
+  - `static/img/herond-wallet/` (16 images)
+  - `static/img/account-services/` (4 images)
+  - `static/img/herond-shield/` (14 images)
+  - `static/img/herond-ecosystem/` (3 images)
+  - `static/img/personalization/` (5 images)
+- Update all markdown image references to new paths
+- Update `docusaurus.config.js` brand asset paths
+
+## Current Status
+
+- Site builds successfully with no errors
+- Homepage with dynamic popular articles working
+- Brand colors, logo, favicon, social links configured
+- Lucide React icons for category cards
+- Offline local search functional
+- Images organized by category for easy maintenance
+- Deployed via GitHub Actions to GitHub Pages
